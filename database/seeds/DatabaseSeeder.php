@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Review;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -12,8 +13,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-           GenreSeeder::class,
-           MovieSeeder::class
+            GenreSeeder::class,
+            MovieSeeder::class,
+            UserReviewTableSeeder::class,
+            ReviewVoteSeeder::class,
+            MovieStarRatingSeeder::class
         ]);
     }
 }

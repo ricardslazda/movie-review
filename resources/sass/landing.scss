@@ -1,0 +1,75 @@
+.landing {
+    color: white;
+    &__badge {
+        &--new {
+            font-size: 1.2rem;
+            position: absolute;
+            top: 5px;
+            margin-left: 10px;
+        }
+    }
+    &__title {
+        &--big {
+            font-family: "Lato", sans-serif;
+            text-transform: capitalize;
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        &--medium {
+            font-family: "Lato", sans-serif;
+            text-transform: capitalize;
+            font-size: 2.3rem;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+
+        &--small {
+            font-family: "Lato", sans-serif;
+            text-transform: capitalize;
+            font-size: 2.3rem;
+            font-weight: bold;
+            letter-spacing: 1.5px;
+        }
+    }
+}
+.landing{
+    &__container{
+        margin: 150px 200px 80px;
+    }
+    &__options{
+        margin-bottom: 80px !important;
+    }
+    &__discover{
+        font-family: "Lato", sans-serif;
+        text-transform: capitalize;
+        font-size: 2rem;
+        font-weight: bold;
+        letter-spacing: .15rem;
+        &-btn{
+            color: white;
+            font-size: 1.55rem;
+            padding: 7px 20px;
+            border-radius: 30px;
+            background-color: #ff504d;
+        }
+    }
+    &__list-item{
+        font-family: "Lato", sans-serif;
+        text-transform: capitalize;
+        font-size: 1.7rem;
+        letter-spacing: .15rem;
+        display: inline;
+        padding-bottom: 1.2rem;
+        border-radius: .2rem;
+        color: #8d8d8d;
+        &:hover{
+            color: white;
+        }
+        &--active{
+            border-bottom: .4rem solid #ff504d;
+            color: white;
+        }
+    }
+}

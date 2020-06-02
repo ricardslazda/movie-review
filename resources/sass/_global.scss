@@ -1,0 +1,17 @@
+html{
+    font-size: 10px;
+}
+body{
+    background: linear-gradient(165deg, #251431 0%, #161130 22%);
+}
+a{
+    &:hover{
+        text-decoration: none !important;
+    }
+}
+.content {
+    width: calc(100% - 280px);
+    margin-left: 280px;
+    transition: all 0.4s;
+    margin-top: 70px !important;
+}

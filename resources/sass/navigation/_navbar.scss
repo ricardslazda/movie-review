@@ -1,0 +1,44 @@
+.navigation{
+    height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    width: 100%;
+    border-bottom: rgba(255,255,255,.4) 1px solid;
+    background: #161130 !important;
+    transition: .4s all;
+    padding: 0 9rem;
+    &__list-item{
+        font-size: 1.7rem !important;
+        color: #f3f3f3;
+        text-align: center;
+        margin-right: 20px;
+    }
+    &__login{
+        color: white;
+        font-size: 1.55rem;
+        padding: 7px 20px;
+        border-radius: 30px;
+        background-color: #ff504d;
+    }
+    &--active{
+        padding-right: 37rem;
+    }
+    &__logo{
+        height: 60px;
+    }
+    &__bars{
+        color: white;
+    }
+    &__brand{
+        transition: .4s transform;
+    }
+    &__search{
+        &-input{
+            font-size: 1.6rem !important;
+        }
+        &-submit{
+            font-size: 1.6rem !important;
+        }
+    }
+}

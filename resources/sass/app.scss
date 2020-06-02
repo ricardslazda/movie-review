@@ -1,1 +1,14 @@
-//
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import "vue-bootstrap";
+@import "navigation/sidebar";
+@import "navigation/navbar";
+@import "movie";
+@import "landing";
+@import "global";

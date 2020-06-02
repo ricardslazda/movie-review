@@ -1,0 +1,78 @@
+.sidebar {
+    min-width: 280px;
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+    transition: all 0.4s;
+    z-index: 10;
+    &__sub-title{
+        color: #fff;
+        font-family: "Alegreya Sans", sans-serif;
+        font-weight: bold;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        font-size: 1.7rem;
+    }
+    &__logo{
+        height: 60px;
+        &-container{
+            position: absolute;
+            bottom: 60px;
+            left: 40px;
+        }
+    }
+    &__close{
+        color: white;
+        font-size: 1.8rem;
+        position: absolute;
+        right: 40px;
+        top: 26.5px;
+    }
+    &__title{
+        font-size: 2.7rem !important;
+        color: #f3f3f3;
+        text-transform: uppercase;
+        font-family: "Alegreya Sans", sans-serif;
+        letter-spacing: 6px;
+        font-weight: bold;
+        margin: 0 !important;
+        padding: 0 !important;
+        &-container{
+            background: #161130 !important;
+            border-bottom: rgba(255,255,255,.4) 1px solid;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            &::after{
+                content: '';
+                position: relative;
+                width: 100%;
+                height: 1px;
+                bottom: 0;
+                left: 0;
+                z-index: -1;
+                box-shadow: 3px 3px 10px white;
+            }
+        }
+    }
+    &__item{
+        font-size: 1.7rem !important;
+        color: #8d8d8d !important;;
+        &:hover, &-container:hover{
+            color: #f3f3f3 !important;
+        }
+    }
+}
+#sidebar.active {
+    margin-left: -280px
+}
+#content.active {
+    width: 100%;
+    margin: 0;
+}
+#bars.active{
+    transform: translateX(-170px);
+}

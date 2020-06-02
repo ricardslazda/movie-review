@@ -1,0 +1,116 @@
+.movie-small{
+    &__image{
+        height: 25.2rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    &__info{
+        &-name{
+            color: white;
+            font-size: 2.2rem;
+        }
+        &-genre{
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 1.5rem;
+        }
+    }
+}
+.movie-medium{
+    &__container{
+        height: 20rem;
+        overflow: hidden;
+        margin-bottom: 8rem;
+    }
+    &__rating{
+        color: yellow;
+        &-container {
+            height: 4rem;
+            color: white;
+            font-size: 1.5rem;
+            position: absolute;
+            z-index: 7;
+            padding: 0.5rem 2rem;
+            display: flex;
+            text-align: center;
+            justify-content: flex-end;
+            top: 1.5rem;
+            right: 2rem;
+        }
+    }
+    &__image{
+        height: 20rem;
+        width: 100%;
+        object-fit: cover;
+        opacity: .5;
+        border-radius: 10px;
+    }
+    &__info{
+        &-container{
+            position: relative;
+            bottom: 13rem;
+            text-align: center;
+        }
+        &-name{
+            font-family: "Lato", sans-serif;
+            text-transform: capitalize;
+            font-size: 1.9rem;
+            font-weight: bold;
+            color: white;
+            letter-spacing: .2rem;
+        }
+        &-genre{
+            font-size: 1.3rem;
+            color: #b3b3b3;
+            font-family: "Lato", sans-serif;
+            text-transform: capitalize;
+            letter-spacing: .1rem;
+        }
+    }
+}
+.movie-big{
+    &__info{
+        &-container{
+            position: relative;
+            text-align: center;
+            bottom: 30rem;
+        }
+        &-title{
+            font-family: "Roboto", sans-serif;
+            letter-spacing: .5rem;
+            font-size: 4.5rem;
+            text-transform: uppercase;
+        }
+    }
+    &__image {
+        height: 50rem;
+        width: 100%;
+        object-fit: cover;
+        transition: .4s;
+        transition-property: transform, opacity;
+        opacity: .5;
+        &-container {
+            height: 50rem;
+            overflow: hidden;
+            &:hover > .movie-big__image {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+        }
+    }
+    &__release{
+        text-transform: capitalize;
+        font-size: 1.8rem;
+        color: lightgray;
+        font-family: "Roboto", sans-serif;
+        &-container {
+            position: relative;
+            bottom: 16rem;
+            left: 4rem;
+            & span{
+                font-size: 1.5rem;
+                color: gray;
+                font-family: "Roboto", sans-serif;
+            }
+        }
+    }
+}
